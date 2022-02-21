@@ -1,3 +1,7 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 h1 {
     text-align: center;
     margin-top: 50px;
@@ -19,4 +23,43 @@ h1 {
 #article-brief p {
     position: relative;
     width: 45%;
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+}
+
+#list h2 {
+    text-align: center;
+    font-size: 25px;
+    color: cadetblue;
+}
+
+#list ul {
+    margin: 0 auto;
+    padding-left: 0px;
+}
+
+#list ul li {
+    font-size: 20px;
+    list-style: none;
+    margin-bottom: 10px;
+    background: bisque;
+    color: black;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width: 650px) {
+    #brief{
+        background-color: aquamarine;
+    }
+
+    #article-brief{
+        flex-direction: column;
+    }
+
+    #article-brief p {
+        width: 100%;
+    }
 }
